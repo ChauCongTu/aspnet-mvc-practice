@@ -1,0 +1,38 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Prime Number Css */
+
+.show-result {
+    padding: 10px;
+}
+
+.prime-item::after {
+    content: ", ";
+}
+
+.prime-item:last-child::after {
+    content: "."
+}
+
+/* Multiplication Table Css */
+.mulTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.multiplication li {
+    margin-left: 20px;
+}
+
+.heading {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-weight: bold;
+}

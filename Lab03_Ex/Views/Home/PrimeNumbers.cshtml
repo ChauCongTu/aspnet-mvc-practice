@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Các số nguyên tố từ 0 - 100";
+}
+
+<h2>Số nguyên tố</h2>
+<p class="alert-success show-result">
+    Các số nguyên tố từ 0 - 100 là:
+    @{
+        for (int i = 2; i <= 100; i++)
+        {
+            bool isPrime = true;
+            for (int j = 2; j <= Math.Sqrt(i); j++)
+            {
+                if (i % j == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime)
+            {
+                <span class="prime-item">@i</span>
+            }
+        }
+    }
+</p>

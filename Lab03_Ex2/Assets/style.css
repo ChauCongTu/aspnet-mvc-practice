@@ -1,0 +1,50 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+thead {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+td input, select {
+    width: 100%;
+    height: 35px;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+td textarea {
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.td-label {
+    background-color: #dfe6e9;
+    width: 35%;
+}
+
+input#receiveEmail {
+    width: auto;
+    height: auto;
+}
+
+.table-header {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #0984e3;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 0;
+    font-weight: bold;
+}

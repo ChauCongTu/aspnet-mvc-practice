@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Bảng cửu chương";
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="mulTable">
+    @{
+        for (int i = 2; i <= 9; i++)
+        {
+            <ul class="multiplication">
+                <p class="heading">Bảng cửu chương @i</p>
+                @for (int j = 1; j <= 10; j++)
+                {
+                    int result = i * j;
+                    <li>@i x @j = @result</li>
+                }
+            </ul>
+        }
+    }
+</div>
+
