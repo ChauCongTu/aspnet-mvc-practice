@@ -1,0 +1,14 @@
+﻿@model Lab04_WebApplication1.Models.Customer
+@{
+    ViewBag.Title = "CustomerDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //lấy dữ liệu truyền qua đối tượng theo cách 2
+    //var customer = Model as Lab04_WebApplication1.Models.Customer;
+}
+<h2>Chi tiết khách hàng lấy theo cách 1 </h2>
+<p>Mã số: @Model.CustomerId </p>
+<p>Họ và tên: @Model.FullName </p>
+<p>Địa chỉ: @Model.Address </p>
+<p>Điện thoại: @Model.Phone </p>
+<p>Email: @Model.Email </p>
+<p>Số tiền dư: @Model.Balance </p>
