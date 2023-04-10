@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = ViewBag.Song.Name + " - " + ViewBag.Song.singer;
+}
+
+<h2>@ViewBag.Song.Name - @ViewBag.Song.singer</h2>
+
+
+<audio controls>
+    <source src=@ViewBag.Song.url />
+</audio>
+
+@Html.ActionLink("Tải về", "Download", new { ID = ViewBag.Song.ID })
+
+
+<p>@Html.ActionLink("Quay lại danh sách", "ListSong")</p>
+

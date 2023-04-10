@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Lab02_WebApplication3.Models.Song>
+@{
+    ViewBag.Title = "Playlist hay";
+}
+
+<h2>Playlist hay</h2>
+@foreach(var song in Model)
+    {
+        <p>@Html.ActionLink(song.Name + " - " + @song.singer, "Detail", new { ID = song.ID}) | @Html.ActionLink("Tải về", "Download", new {ID = song.ID}) </p>
+    }
+
